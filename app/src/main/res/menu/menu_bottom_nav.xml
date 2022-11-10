@@ -16,4 +16,5 @@
         android:id="@+id/mNewsLa"
         android:icon="@drawable/ic_baseline_newspaper"
         android:title="News" />
+
 </menu>
