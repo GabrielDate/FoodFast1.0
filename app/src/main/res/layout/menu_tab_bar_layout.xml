@@ -39,13 +39,24 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-
-    <FrameLayout
-        android:id="@+id/idContainerTabLayout"
+    <include
+        android:id="@+id/fragporcoes"
+        layout="@layout/fragment_porcoes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/idTabLayout"
-        android:background="@color/teal_200" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTabLayout" />
+    <include
+        android:id="@+id/fragBebidas"
+        layout="@layout/fragment_bebidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragporcoes" />
+    <include
+        android:id="@+id/fragLanches"
+        layout="@layout/fragment_lanches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragBebidas" />
 
 
 </RelativeLayout>
